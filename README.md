@@ -1,21 +1,33 @@
-# Expense-tracker
-Expense-tracker app written in react.js for keeping track of income and expenses using the context api.
+## Expense-tracker
+Expense tracking app written in react.js for keeping track of income and expenses using the context api.
 
-# React Preview
-### `npm start`
+## React Preview
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Netlify
+https://expense-tracker-ys.netlify.app/
+
+### Locally
+* clone this repo,
+* cd to expense-tracker,
+* run npm start
+
+
+```sh
+git clone https://github.com/ya-suke/expense-tracker &&
+\ cd expense-tracker &&
+\ npm start
+````
+
+* open [http://localhost:3000](http://localhost:3000) to view it in the browser.
        
-## CONTRIBUTORS
+## Contributors
 * /\\/!n]a [@ya-suke](https://www.github.com/ya-suke "ninja's github") 
 
 
-## Project Specifications
-/
-## TODO's:
-- [x] create react app
-- [x] create components
-- [x] show balance, expense and income
+## Todo's:
+- [x] Create react app
+- [x] Create components
+- [x] Show balance, expense and income
 - [x] Add new transaction and reflect in total
 - [x] Delete items
-- [ ] use 
+- [ ] Add Projected Monthly income
