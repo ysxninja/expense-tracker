@@ -4,16 +4,21 @@ import { GlobalContext } from "../context/GlobalState";
 export const AddTransaction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
+  const [type, setType] = useState("Income");
 
+  console.log(type);
   const { addTransaction } = useContext(GlobalContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
 
+    const amountchecked =
+      type == "Expense" ? -Math.abs(+amount) : Math.abs(+amount);
+
     const newTransaction = {
       id: Math.floor(Math.random() * 10000000000),
       text,
-      amount: +amount,
+      amount: amountchecked,
     };
     addTransaction(newTransaction);
   };
@@ -31,10 +36,18 @@ export const AddTransaction = () => {
             placeholder="Enter text..."
           />
         </div>
+        <label htmlFor="income">Type</label>
+        <select
+          name="income"
+          value={type}
+          onChange={(e) => setType(e.target.value)}
+        >
+          <option value="Income"> Income </option>
+          <option value="Expense"> Expense</option>
+        </select>
         <div className="form-control">
           <label htmlFor="amount">
             Amount <br />
-            (negative - expense, positive - income)
           </label>
           <input
             type="number"
