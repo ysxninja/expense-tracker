@@ -1,5 +1,9 @@
 [build]
+<<<<<<< HEAD
     command = "CI= npm run build"
+=======
+    command = "npm run build"
+>>>>>>> ff7e08636d1ecbc8f769e47e520b6b34455cee0d
     publish= "/build"
     base = "/"
 
