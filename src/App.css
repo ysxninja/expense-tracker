@@ -22,6 +22,45 @@ body {
   width: 350px;
 }
 
+/* For Mobile */
+
+@media screen and (max-width: 220px){
+    .container{
+        display: none ;
+    }
+}
+
+@media screen and (min-width: 220px) and (max-width: 260px){
+    .container{
+        width: 190px;
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (min-width:260px) and (max-width: 375px){
+    .container{
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:540px){
+    .container{
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 700px) {
+    .container{
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    .container{
+        width: 370px;
+    }
+}
+
 h1 {
   letter-spacing: 1px;
   margin: 0;
